@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">bitirmeprojesi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yapay_zeka_le_foto_raf_olu_tur">Yapay Zeka İle Fotoğraf Oluştur</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/girisFragment">
+
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.example.bitirmeprojesi.GirisFragment"
+        android:label="fragment_giris"
+        tools:layout="@layout/fragment_giris" >
+        <action
+            android:id="@+id/action_girisFragment_to_secimFragment"
+            app:destination="@id/secimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secimFragment"
+        android:name="com.example.bitirmeprojesi.SecimFragment"
+        android:label="fragment_secim"
+        tools:layout="@layout/fragment_secim" >
+        <action
+            android:id="@+id/action_secimFragment_to_metinFragment"
+            app:destination="@id/metinFragment" />
+        <action
+            android:id="@+id/action_secimFragment_to_galeriFragment"
+            app:destination="@id/galeriFragment" />
+        <action
+            android:id="@+id/action_secimFragment_to_kameraFragment"
+            app:destination="@id/kameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kaydetFragment"
+        android:name="com.example.bitirmeprojesi.KaydetFragment"
+        android:label="fragment_kaydet"
+        tools:layout="@layout/fragment_kaydet" >
+        <action
+            android:id="@+id/action_kaydetFragment_to_secimFragment"
+            app:destination="@id/secimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/metinFragment"
+        android:name="com.example.bitirmeprojesi.MetinFragment"
+        android:label="fragment_metin"
+        tools:layout="@layout/fragment_metin" >
+        <action
+            android:id="@+id/action_metinFragment_to_kaydetFragment2"
+            app:destination="@id/kaydetFragment" />
+        <action
+            android:id="@+id/action_metinFragment_to_secimFragment"
+            app:destination="@id/secimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galeriFragment"
+        android:name="com.example.bitirmeprojesi.GaleriFragment"
+        android:label="fragment_galeri"
+        tools:layout="@layout/fragment_galeri" >
+        <action
+            android:id="@+id/action_galeriFragment_to_kaydetFragment"
+            app:destination="@id/kaydetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kameraFragment"
+        android:name="com.example.bitirmeprojesi.KameraFragment"
+        android:label="fragment_kamera"
+        tools:layout="@layout/fragment_kamera" >
+        <action
+            android:id="@+id/action_kameraFragment_to_kaydetFragment"
+            app:destination="@id/kaydetFragment" />
+    </fragment>
+</navigation>
